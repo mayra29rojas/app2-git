@@ -1,0 +1,226 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app2.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/gama-baja2.jpg','imagenes/gama-alta2.jpeg','imagenes/gama-media2.jpg','imagenes/compañiasmex2.jpg','imagenes/celufutu1.jpg','imagenes/celufutu4.jpg','imagenes/celutu5.jpg','imagenes/celufutu7.jpg','imagenes/historia1.jpg')">
+
+<div data-role="page" id="Principal" data-theme="c">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Telefonía celular</h1>
+</div>
+<div data-role="main" class="ui-content"></div>
+<div>
+<ul data-role="listview" data-theme="c" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+<h2>¿Qué es un teléfono celular?</h2>
+<p>Se muestra información de los teléfonos celulares</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+<h2>Historia de la teléfonia celular</h2>
+<p>Se muestra la historia de los celulares</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Clasificación de la telefonia celular</h2>
+<P>Muestra la clasificación de los celulares</P>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Compañias que manejan la telefonia celular en México</h2>
+<p>Muestra el nombre de las compañias en México</p>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+<h2>Teléfonos celulares del futuro</h2>
+<p>Muestra los teléfonos celulares del futuro</p>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="c" data-position="fixed">
+<div>
+<img src="imagenes/logo.png" width="46" heigth="46">
+</div>
+<div>
+<h4>Aplicacion Dos</h4>
+<h4>Mayra Edith Rojas Barboza</h4>
+  </div>
+ </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="c">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>TELEFONOS CELULARES</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+<h2>Dispositivo inalámbrico electrónico que permite tener acceso a la red de telefonía celular o móvil. Se denomina celular debido a las antenas repetidoras que conforman la red, cada una de las cuales es una célula, si bien existen redes telefónicas móviles satelitales. Su principal característica es su portabilidad, que permite comunicarse desde casi cualquier lugar.</h2>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>imagen de un celular</h1>
+    <div>
+      <br>
+</div>
+<div>
+     <img src="imagenes/celular.jpg" width="50%" height="50%">
+    </div>
+    </div>
+    </div>
+    
+    <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>imagen de un celular</h1>
+    <div>
+      <br>
+</div>
+<div>
+     <img src="imagenes/celular1.jpg" width="50%" height="50%">
+    </div>
+    </div>
+    </div>
+</div>
+</div>
+<div data-role="footer" data-theme="c" data-position="fixed">
+<h4>Aplicacion Dos,MERB</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="c">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>HISTORIA</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+<h2>La telefonía móvil o celular se conoce desde mediados del siglo XX, aunque no fue hasta los años setenta que poco a poco comenzó a extenderse, primeramente a precios muy altos y con equipos rudimentarios.El primer prototipo de teléfono móvil comercializado a gran escala fue el diseñado por el ingeniero Rudy Krolopp, de la compañía Motorola, en 1983. Este teléfono pesaba 0,74 kg, y tenía un valor de 4000 dólares.A pesar de los avances de las compañías estadounidenses, la burocracia del Gobierno de Estados Unidos permitió a Japón, basado en la tecnología estadounidense, inaugurar en 1979 su servicio celular convirtiéndose en el primer país en usarlo.En marzo del 1981 el presidente de Motorola comienza hacer gestiones con las más altas esferas del Gobierno de los Estados Unidos, hasta presentarle el prototipo a Ronald Reagan entonces presidente del país, este ve las ventajas del sistema y presiona a la FCC para autorización del servicio. Luego de dos meses de esta entrevista, terminan 8 años de burocracia, dando la Comisión Federal de Comunicaciones luz verde al proyecto. Quedando AT&T con el servicio y Motorola con los equipos.</h2>
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('historia','','imagenes/historia1.jpg',1)"><img src="imagenes/historia.jpg" width="450" height="631" id="historia"></a>
+</div>
+</div>
+<div data-role="footer" data-theme="c" data-position="fixed">
+<h4>Aplicacion Dos,MERB</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="c">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>CLASIFICACION</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+      <h2>Alta gama
+En este nivel encajan los smartphones que estén dotados con casi todos los elementos más evolucionados de la telefonía móvil
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('gamabaja','','imagenes/gama-baja2.jpg',1)"><img src="imagenes/gama_baja.jpg" width="401" height="257" id="gamabaja"></a>
+<br>
+Media gama
+Los smartphones de media gama se caracterizan por tener pantallas de calidad, pero de menor tamaño, resolución y profundidad de pixeles por pulgada; en la mayoría de los casos funcionan con una versión anterior a la más actual de su sistema operativo; los procesadores no tienen la potencia de los que encontramos en gamas superiores, y las cámaras y fotográficas generalmente cuentan con menos cantidad de megapíxeles.
+
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('gamamedia','','imagenes/gama-media2.jpg',1)"><img src="imagenes/gama-media.jpg" width="700" height="500" id="gamamedia"></a>
+<br>
+Baja gama
+Sus pantallas son de escasas dimensiones y resolución, poca memoria RAM y mínima capacidad de almacenamiento interno, cámaras VGA (no llegan al Megapíxel), menores herramientas, acceso a redes y aplicaciones, entre otros aspectos. Se diferencian de los teléfonos básicos (no inteligentes), por el hecho de permitir funcionalidades que van más allá de llamar y recibir llamadas.</h2>
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('gamalta','','imagenes/gama-alta2.jpeg',1)"><img src="imagenes/gama-alta.jpg" width="625" height="386" id="gamalta"></a>
+</div>
+      </div>
+    <div data-role="footer" data-theme="c" data-position="fixed">
+    <h4>Aplicacion Dos,MERB</h4>
+    </div>
+    </div>
+    
+    
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>COMPAÑIAS EN MEXICO</h1>
+    </div>
+    <div data-role="content" align="left">
+    <dv>
+      <h2>Iusacell, Movistar, Nextel,Telcel, Unefon y Axtel</h2>
+      <br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('compañias','','imagenes/compañiasmex2.jpg',1)"><img src="imagenes/compañiasmex.jpg" width="920" height="333" id="compañias"></a>
+    </div>
+    </div>
+<div data-role="footer" data-theme="c" data-position="fixed">
+   <h4>Aplicacion Dos,MERB</h4>
+   </div>
+   </div>
+   
+   
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="c">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>TELEFONOS CELULARES DEL FUTURO</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+       <h2>Proyecto ARA,
+       Sony Ericsson Concept Phone
+Con una cámara de 3,2 megapíxeles, una capacidad de almacenamiento de 2 GB, y un diseño exclusivo dentro de un dispositivo del tamaño de una tarjeta de crédito, Sony Ericsson trabaja en su modelo del futuro para darle la máxima exclusividad.</h2>
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ara','','imagenes/celufutu1.jpg',1)"><img src="imagenes/celufutu.jpg" width="480" height="360" id="ara"></a>
+      <h2> Tag de NEC 
+Tag es uno de los modelos futuristas en los que está trabajando NEC. Como podéis apreciar en las fotos se trata de una especie de cinturón flexible, que se puede adaptar a muchas posturas, de forma que sea más comoda la comunicación sin manos. </h2>
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('nec','','imagenes/celutu5.jpg',1)"><img src="imagenes/celufutu4.jpg" width="400" height="447" id="nec"></a>
+
+<h2> BenQSiemens Snake phone 
+El BenQSiemens Snake phone es un modelo de teléfono móvil futurista al estilo de los teléfonos móviles pulsera. Pero sin duda con un diseño aún más rompedor. </h2>
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('phone','','imagenes/celufutu7.jpg',1)"><img src="imagenes/celufutu6.jpg" width="320" height="256" id="phone"></a>
+
+
+       
+       </div>
+       </div>
+      <div data-role="footer" data-theme="c" data-position="fixed">
+      <h4>Aplicacion Dos,MERB</h4>
+      </div>
+      </div>
+      
+      
+      
+</body>
+</html>
